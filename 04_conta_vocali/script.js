@@ -1,12 +1,13 @@
 /* Scrivi una funzione che accetti una stringa e restituisca il numero di vocali contenute al suo interno */
-
-const word = 'javascript';
-
+function contlett(stri) {
+    return stri.match(/[aeiou]/gi)?.length || 0;
+}
 
 // Dichiara la funzione qui.
-
+const word = 'javascript';
 
 // Invoca la funzione qui e stampa il risultato in console
+console.log(contlett(word));
 
 
 
